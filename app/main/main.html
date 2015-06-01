@@ -1,0 +1,63 @@
+<div ng-include="'client/components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Hello welcome to our yammy video center</h1>
+    <!--p class="lead">Kick-start your next work with web workers</p-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQds0qvB_RAwsj8JLArp53YwY3w3wnGk1oi1YiAPWMOt-GSBVvM" alt="Yammy videos">
+  </div>
+</header>
+    <div class="col-lg-12">
+        <div class="form-group" >
+          <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn = 'today';getDateFilterUserData('today');" ng-class="{active:activeBtn=='today'}">Dancing</button>
+          <button type="button" class="btn btn-primary btn-xs  navbar-btn" ng-click="activeBtn='yesterday';getDateFilterUserData('yesterday');" ng-class="{active:activeBtn=='yesterday'}">Singing</button>
+          <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn='7 days';getDateFilterUserData('last7days');" ng-class="{active:activeBtn=='7 days'}">Acting</button>
+          <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn='30 days';getDateFilterUserData('last30days');" ng-class="{active:activeBtn=='30 days'}">Photography</button>
+          <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn='30 days3';getDateFilterUserData('last30days');" ng-class="{active:activeBtn=='30 days3'}">Public voice</button>
+          <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn='30 days1';getDateFilterUserData('last30days');" ng-class="{active:activeBtn=='30 days1'}">Portfolio</button>
+          <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn='30 days2';getDateFilterUserData('last30days2');" ng-class="{active:activeBtn=='30 days2'}">Brand Baja</button>
+      </div>
+    <div class="col-lg-12">
+      <div ng-repeat="video in videos" class="row">
+        <div class="col-lg-6 text-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eqJ9goTIpN4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6">
+            <div class="col-lg-6"> 
+              <img class="img-responsive img-thumbnail" ng-src="{{photo}}"/>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                   <span class="col-lg-5">Name</span>
+                  <span class="col-lg-7">abc</span>
+              </div><hr />
+              <div class="row">
+                   <span class="col-lg-5">Age</span>
+                  <span class="col-lg-7">24</span>
+              </div><hr />
+              <div class="row">
+                   <span class="col-lg-5">Sex</span>
+                  <span class="col-lg-7">Male</span>
+              </div><hr />
+              <div class="row">
+                   <span class="col-lg-5">Contact</span>
+                  <span class="col-lg-7">+91-9494979407</span>
+              </div><hr />
+              <div class="row">
+                   <span class="col-lg-5">Mail id</span>
+                  <span class="col-lg-7">ganesh.bonangi@gmail.com</span>
+              </div><hr />
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p>Follow us |
+        <a href="https://fb.com/ganesh.bonangi">Facebook</a> |
+        <a href="https://twitter.com/ganesh.bonangi">@Twitter</a> |
+        <a href="https://plus.google.com/ganesh.bonangi">Google+</a></p>
+  </div>
+</footer>
