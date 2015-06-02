@@ -30,17 +30,22 @@ angular.module('workerManagementSystemApp', [
       when('/news', {
         templateUrl: 'templates/news.html',
         controller: 'NewsCtrl'
+      }).when('/willget', {
+        templateUrl: 'client/app/account/willget/willget.html',
+        controller: 'WillgetCtrl'
+      }).when('/about', {
+        templateUrl: 'client/app/account/about/about.html',
+        controller: 'AboutCtrl'
+      }).when('/help', {
+        templateUrl: 'client/app/account/help/help.html',
+        controller: 'HelpCtrl'
+      }).when('/contact', {
+        templateUrl: 'client/app/account/contact/contact.html',
+        controller: 'ContactCtrl'
       }).
       otherwise({
         redirectTo: '/'
       });
-  /*  $routeProvider
-      .otherwise({
-        redirectTo: '/'
-      });
-
-    $locationProvider.html5Mode(true);
-    $httpProvider.interceptors.push('authInterceptor');*/
   })
 
   .factory('authInterceptor', function ($rootScope, $q, $cookieStore, $location) {

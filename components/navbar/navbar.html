@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">Yo Videos</a>
+      <a href="/client/#home" class="navbar-brand">Yo Videos</a>
     </div>
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
@@ -16,6 +16,10 @@
         </li>
         <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
         <li ng-show="isEmployer()" ng-class="{active: isActive('/employer')}"><a href="/employer">Employer</a></li>
+        <li ng-class="{active: isActive('/willget')}"><a href="client/#willget">What I'll get</a></li>
+        <li ng-class="{active: isActive('/about')}"><a href="client/#about">About Us</a></li>
+        <li ng-class="{active: isActive('/help')}"><a href="client/#help">Help</a></li>
+        <li ng-class="{active: isActive('/contact')}"><a href="client/#contact">Contact Us</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
