@@ -18,38 +18,22 @@
           <button type="button" class="btn btn-primary btn-xs navbar-btn" ng-click="activeBtn='30 days2';getDateFilterUserData('last30days2');" ng-class="{active:activeBtn=='30 days2'}">Brand Baja</button>
       </div>
     <div class="col-lg-12">
-      <div ng-repeat="video in videos" class="row">
-        <div class="col-lg-6 text-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/eqJ9goTIpN4" frameborder="0" allowfullscreen></iframe>
+        <div class="col-lg-8 text-center">
+          <div ng-class="col-lg-10">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eqJ9goTIpN4" frameborder="0" allowfullscreen></iframe>
+            <button style="position:absolute;margin-top:145px;" class="btn" ng-click="openDetails()">{{buttonText}}</button>
+          </div>
+          <div class="col-lg-2" ng-show="isOpende">
+            gani
+          </div>
         </div>
-        <div class="col-lg-6">
-            <div class="col-lg-6"> 
-              <img class="img-responsive img-thumbnail" ng-src="{{photo}}"/>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                   <span class="col-lg-5">Name</span>
-                  <span class="col-lg-7">abc</span>
-              </div><hr />
-              <div class="row">
-                   <span class="col-lg-5">Age</span>
-                  <span class="col-lg-7">24</span>
-              </div><hr />
-              <div class="row">
-                   <span class="col-lg-5">Sex</span>
-                  <span class="col-lg-7">Male</span>
-              </div><hr />
-              <div class="row">
-                   <span class="col-lg-5">Contact</span>
-                  <span class="col-lg-7">+91-9494979407</span>
-              </div><hr />
-              <div class="row">
-                   <span class="col-lg-5">Mail id</span>
-                  <span class="col-lg-7">ganesh.bonangi@gmail.com</span>
-              </div><hr />
+        <div class="col-lg-4">
+            <div class="col-lg-12" ng-repeat="video in videos"> 
+              <a ng-href="/client#{{video}}">
+                <img class="img-responsive img-thumbnail" ng-src="{{photo}}"/>
+              </a>
             </div>
         </div>
-      </div>
     </div>
 </div>
 
