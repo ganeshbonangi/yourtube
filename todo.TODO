@@ -1,5 +1,7 @@
  ☐ services
    ☐ video service
-     ☐ should provid video as per the vodio id using post request
+  1. should provid video as per the vodio id using post request
        ex: service url: http://abc.com/getVideo
-           perameters vId:12345
+           perameters vId:12345 
+    
+2.should provide list of videos ids and main video for displaying incial time in the home page and banners of the videos.
