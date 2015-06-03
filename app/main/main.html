@@ -19,12 +19,21 @@
       </div>
     <div class="col-lg-12">
         <div class="col-lg-8 text-center">
-          <div ng-class="col-lg-10">
+          <div ng-class="isOpened?'col-lg-10':'col-lg-12'">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/eqJ9goTIpN4" frameborder="0" allowfullscreen></iframe>
             <button style="position:absolute;margin-top:145px;" class="btn" ng-click="openDetails()">{{buttonText}}</button>
           </div>
-          <div class="col-lg-2" ng-show="isOpende">
-            gani
+          <div class="col-lg-2" ng-show="isOpened">
+            <table class="table row">
+                <tr>
+                  <td>Name</td>
+                  <td>Doe</td>
+                </tr>
+                <tr>
+                  <td>ph</td>
+                  <td>+919701940638</td>
+                </tr>
+              </table>
           </div>
         </div>
         <div class="col-lg-4">
