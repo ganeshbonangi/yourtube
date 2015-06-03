@@ -1,13 +1,12 @@
  ☐ services
    ☐ video service
-<<<<<<< HEAD
-     ☐ should provid video as per the vodio id using post request
-       ex: service url: http://abc.com/getVideo
-           perameters vId:12345
-=======
+
   1. should provid video as per the vodio id using post request
        ex: service url: http://abc.com/getVideo
-           perameters vId:12345 
+           request param
+            vId:12345 
+           responce 
+            video with video provider, video info(like provider name contact, video categiry,liks and comments)
     
 2.should provide list of videos ids and main video for displaying incial time in the home page and banners of the videos.
->>>>>>> fb93e717e840e0e7d1ececd27b6c12d2057c2a1a
+
